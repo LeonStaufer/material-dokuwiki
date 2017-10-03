@@ -1,7 +1,9 @@
-# material
+# Material Design Template for DokuWiki
 
 This Material template is very easy to install and use, whilst offering a multitude of customization options.
 Foremost, you can choose a primary (and primary dark) and accent color. From there on, you can fully customize the sidebar, making use of the entire material icon pack.
+
+Visit the template page on the [DokuWiki forums](https://www.dokuwiki.org/template:material)
 
 
 ## Design
