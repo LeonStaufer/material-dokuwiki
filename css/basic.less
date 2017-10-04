@@ -1,0 +1,283 @@
+//TODO: clean up less file
+
+.page-content {
+  a,
+  a:link,
+  a:active,
+  a:visited,
+  a:hover {
+    color: #3986dd;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: 1600px) {
+  .page-content {
+    width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+.mdl-logo {
+  a {
+    color: @light_primary;
+    text-decoration: none;
+  }
+}
+
+.content-search__popup {
+  background: #fff;
+  width: 100%;
+  ._shadow_1dp;
+  margin-top: -10px;
+}
+
+.drawer-top {
+  background: @primary;
+  padding: 5px 0 20px;
+  min-height: 15em;
+  box-shadow: inset 0px -1px 4px 0px rgba(0,0,0,0.7);
+  ._shadow_1dp;
+  .mdl-logo{
+    width: 100%;
+  }
+}
+
+.drawer-tagline {
+  color: @light_primary;
+  margin: 1em;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.mdl-navigation {
+  a{
+    color: @light_secondary;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+  }
+}
+
+.content-title {
+  font-size: 2em !important;
+  font-weight: bold;
+}
+
+.content-notif {
+  margin: 1em 2em;
+}
+
+.content-youarehere {
+  margin: 1em 2em;
+  margin-right: 48px;
+  background: transparent;
+  p {
+    line-height: 2em;
+    padding-left: 1em;
+  }
+}
+
+.content-actions {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  margin-right: -30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.content-actions__container {
+  position: fixed;
+  margin: 0px -55px;
+}
+
+.content-actions__action {
+  padding: .3em 0;
+}
+
+.content-actions__action-button {
+  ._shadow_hover;
+  ._shadow_2dp;
+}
+
+.content-card {
+  ._shadow_1dp;
+  margin: 2em;
+  background: #fff;
+  position: relative;
+  margin-right: 48px;
+  min-height: 300px;
+}
+
+.content-card__title {
+  padding: 1px 1em;
+  ._shadow_0dp;
+  margin-bottom: 10px;
+  h1{
+    margin: 12px 0px;
+  }
+}
+
+.content-card__text {
+  padding: 2em;
+  padding-top: 0.5em;
+  /*
+
+  TODO: nicely format lists
+
+  .toc, .idx {
+    .level1 {
+      list-style: decimal;
+      margin-left: 1em;
+    }
+    .level2 {
+      list-style: lower-roman;
+      margin-left: 2em;
+    }
+  }
+  .idx {
+    li {
+      list-style: decimal;
+      margin-left: 1em;
+    }
+  }
+
+
+   */
+  h1 {
+    font-size: 3em
+  }
+  h2 {
+    font-size: 2em
+  }
+  h3 {
+    font-size: 1.5em
+  }
+  h4 {
+    font-size: 1em;
+  }
+  .edit {
+    width: 98%;
+  }
+  #size__ctl{
+    display: none;
+  }
+  .editButtons {
+    button {
+      background: transparent;
+      border: none;
+      border-radius: 2px;
+      color: rgb(0, 0, 0);
+      position: relative;
+      height: 32px;
+      margin: .5em 1em;
+      min-width: 48px;
+      padding: 0 12px;
+      display: inline-block;
+      font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0;
+      overflow: hidden;
+      will-change: box-shadow;
+      transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      outline: none;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      line-height: 36px;
+      vertical-align: middle;
+      background: rgba(158, 158, 158, 0.20);
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    }
+    button::-moz-focus-inner {
+      border: 0;
+    }
+    button:hover {
+      background-color: rgba(158, 158, 158, 0.20);
+    }
+    button:focus:not(:active) {
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
+      background-color: rgba(158, 158, 158, 0.40);
+    }
+    button:active {
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+      background-color: rgba(158, 158, 158, 0.40);
+    }
+    #edbtn__save {
+      background: @ini_accent;
+      color: rgb(255,255,255)
+    }
+    .toolbutton {
+      background: transparent;
+    }
+  }
+}
+
+.secedit {
+  button {
+    background: transparent;
+    border: none;
+    border-radius: 2px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    height: 32px;
+    margin: 0;
+    min-width: 48px;
+    padding: 0 12px;
+    display: inline-block;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    overflow: hidden;
+    will-change: box-shadow;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    line-height: 36px;
+    vertical-align: middle;
+    background: rgba(158, 158, 158, 0.20);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  }
+  button::-moz-focus-inner {
+    border: 0;
+  }
+  button:hover {
+    background-color: rgba(158, 158, 158, 0.20);
+  }
+  button:focus:not(:active) {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
+    background-color: rgba(158, 158, 158, 0.40);
+  }
+  button:active {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    background-color: rgba(158, 158, 158, 0.40);
+  }
+}
+
+.ui-admin {
+  svg{
+    fill: @primary;
+  }
+}
+
+.mdl-mini-footer {
+  min-height: 100px;
+  .mdl-mini-footer__left-section {
+    overflow: hidden;
+  }
+}
