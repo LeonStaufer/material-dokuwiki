@@ -26,7 +26,7 @@ The toolbar can then looking like the following:
 
 Use the following URL to download this template:
 
-  * download 
+  * [Link to ZIP file on GitHub](https://github.com/LeonStaufer/material-dokuwiki/zipball/master) 
 
 Refer to [this guide](https://www.dokuwiki.org/template) on how to install and use templates in Dokuwiki.
 
