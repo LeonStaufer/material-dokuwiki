@@ -5,6 +5,8 @@ Foremost, you can choose a primary (and primary dark) and accent color. From the
 
 Visit the template page on the [DokuWiki forums](https://www.dokuwiki.org/template:material)
 
+It is based off [Material Design Lite](https://getmdl.io/) with some minor changes and adjustements.
+
 
 ## Design
 
