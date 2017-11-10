@@ -12,7 +12,9 @@
         <?php echo hsc($conf['title']) ?>
     </title>
 
+
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 
     <?php tpl_metaheaders() ?>
 
@@ -39,11 +41,11 @@
         <div class="mdl-layout__header-row">
                     <span class="mdl-layout-title content-title"><?php echo hsc($conf['title']) ?></span>
             <div class="mdl-layout-spacer"></div>
-            <form action="/dokuwiki/doku.php?id=start" accept-charset="utf-8" class="search" id="dw__search"
+            <form action="<?php echo DOKU_BASE . "doku.php"; ?>" accept-charset="utf-8" class="search" id="dw__search"
                   role="search">
                 <div class="mdl-textfield mdl-js-textfield content-search">
                     <input type="hidden" name="do" value="search">
-                    <input class="mdl-textfield__input" id="qsearch__in" accesskey="f" name="id" class="edit"
+                    <input class="mdl-textfield__input edit" id="qsearch__in" accesskey="f" name="id"
                            title="[F]" autocomplete="off">
                     <label class="mdl-textfield__label" for="qsearch__in">Search...</label>
                 </div>
