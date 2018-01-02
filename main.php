@@ -129,15 +129,17 @@
                     </div>
                 <?php endif?>
                 <div class="content-card__text">
-                    <?php
-                    if ($conf['useheading'] == 1){
-                        //TODO: find out what to with the title
-                    }
+                    <?php 
+                    /*  Do you see the heading twice because you have 'useheading' enabled?
+                        You can use one of these two plugins to elegantly hide the redudant second title
+                            -https://www.dokuwiki.org/plugin:pagetitle
+                            -https://www.dokuwiki.org/plugin:hiddenheader
+                    */
                     tpl_content(); ?>
                 </div>
             </article>
         </div>
-        <!-- TODO: fix, footer at bottom -->
+        <!-- FIXME: footer at bottom -->
         <div class="mdl-layout-spacer"></div>
         <footer class="mdl-mini-footer">
             <div class="mdl-mini-footer__left-section">
