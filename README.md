@@ -1,7 +1,8 @@
 # Material Design Template for DokuWiki
 
 This Material template is very easy to install and use, whilst offering a multitude of customization options.
-Foremost, you can choose a primary (and primary dark) and accent color. From there on, you can fully customize the sidebar, making use of the entire material icon pack.
+
+You can begin by choosing between several color themes in the style.ini file. From there on, you can fully customize the sidebar, making use of the entire material icon pack.
 
 Visit the template page on the [DokuWiki forums](https://www.dokuwiki.org/template:material)
 
@@ -11,6 +12,10 @@ It is based off [Material Design Lite](https://getmdl.io/) with some minor chang
 ## Design
 
 ![Screenshot of the template on two devices](https://s1.postimg.org/6fmrfcwptr/material.jpg|screenshot)
+
+## Beautiful themes
+
+![There are 8 unique themes to choose from](https://s17.postimg.org/7e3n1r1qn/Themes.png|screenshot)
 
 ## Elegant Editor
 
@@ -36,8 +41,9 @@ Refer to [this guide](https://www.dokuwiki.org/template) on how to install and u
 2. navigate to the `DOKUWIKI ROOT/lib/tpl/material` folder
 3. open the `style.ini` file and scroll to the "replacements" section
 4. follow the instructions there to change the colors
-5. if you wish you can now open the `sidebar.php` file and change its contents to your liking
-6. and you're set! 
+5. optionally, you can open the `main.php` and change the content property of this tag, `<meta name="theme-color" content="#1a237e">`, to match your primary color
+6. if you wish you can now open the `sidebar.php` file and change its contents to your liking
+7. and you're set! 
  
 ## Feedback
 
