@@ -11,7 +11,7 @@ It is based off [Material Design Lite](https://getmdl.io/) with some minor chang
 
 ## Design
 
-![Screenshot of the template on two devices](https://s1.postimg.org/6fmrfcwptr/material.jpg)
+![Screenshot of the template on two devices](https://s10.postimg.org/op8ho20rd/material.jpg)
 
 ## Beautiful themes
 
