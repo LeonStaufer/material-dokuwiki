@@ -11,11 +11,11 @@ It is based off [Material Design Lite](https://getmdl.io/) with some minor chang
 
 ## Design
 
-![Screenshot of the template on two devices](https://s1.postimg.org/6fmrfcwptr/material.jpg|screenshot)
+![Screenshot of the template on two devices](https://s1.postimg.org/6fmrfcwptr/material.jpg)
 
 ## Beautiful themes
 
-![There are 8 unique themes to choose from](https://s17.postimg.org/7e3n1r1qn/Themes.png|screenshot)
+![There are 8 unique themes to choose from](https://s17.postimg.org/7e3n1r1qn/Themes.png)
 
 ## Elegant Editor
 
