@@ -30,9 +30,55 @@ body {
   h1, h2, h3, h4, h5, h6 {
     //TODO: nice heading styles
   }
+  blockquote{
+    font-size: 1.2em;
+    letter-spacing: 0px;
+    min-width: 20%;
+    margin: 1em 1em;
+    color: #555555;
+    font-style: normal;
+    padding: 1.2em 30px 1.2em 10px;// 75px;
+    border-left: 8px solid #909090 ;
+    line-height:1.4;
+    position: relative;
+    background:#EDEDED;
+  }
+
+  /*blockquote::before{
+    font-family:Arial;
+    content: "\201C";
+    color:#78C0A8;
+    font-size:4em;
+    position: absolute;
+    left: 10px;
+    top:-10px;
+  }*/
+
+  blockquote::before{
+    content: '';
+  }
+
+  blockquote::after{
+    content: '';
+  }
+
+  blockquote cite{
+    display:block;
+    color:#333333;
+    font-style: normal;
+    font-weight: bold;
+    margin-top:1em;
+  }
 }
 
 @media (min-width: 1600px) {
+  .page-content {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 2000px) {
   .page-content {
     width: 1400px;
     margin: 0 auto;
@@ -51,7 +97,7 @@ body {
   width: 100%;
   ._shadow_1dp;
   margin-top: -10px;
-    padding-top: 10px;
+  padding-top: 10px;
   strong{
     padding: 1em;
   }
