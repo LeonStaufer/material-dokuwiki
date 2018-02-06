@@ -60,7 +60,13 @@
             tpl_action($type, true, false, false, '', '', "
                         <button class=\"mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect mdl-button--colored\">
                             <i class=\"material-icons\">perm_identity</i>
-                        </button>") ?>
+                        </button>");
+            if ($INFO['userinfo'] != null){
+                tpl_action('login', true, false, false, '', '', "
+                <button class=\"mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect mdl-button--colored\">
+                  <i class=\"material-icons\">exit_to_app</i>
+                </button>");
+            }?>
             <?php
             tpl_action('admin', true, false, false, '', '', "
                         <button class=\"mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect mdl-button--colored\">
