@@ -107,9 +107,7 @@
                 <?php endif ?>
             </div>
             <article class="content-card">
-                <div class="content-actions" <?php if ($ACT != null && $ACT != "show" && $ACT != "edit" && $ACT != "revisions" || $INFO['writable'] == false) {
-                    echo "hidden=\"hidden\"";;
-                } ?>>
+                <div class="content-actions" <?php if (!($ACT == "search" || $ACT == "edit" || $ACT == "show" || $ACT == "revisions") || $INFO['writable'] == false) echo "hidden=\"hidden\""?>>
                     <div class="content-actions__container">
                         <div class="content-actions__action">
                             <?php
@@ -123,7 +121,7 @@
                                     <i class=\"material-icons\" id=\"tpl_editBtn\">" . $txt . "</i>
                                 </button>") ?>
                         </div>
-                        <div class="content-actions__action">
+                        <div class="content-actions__action" <?php if ($ACT == "search" ) echo "hidden=\"hidden\""; ?>>
                             <?php tpl_action('revisions', true, false, false, '', '', "
                                 <button class=\"mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored content-actions__action-button\">
                                     <i class=\"material-icons\">history</i>
