@@ -35,7 +35,7 @@
 </head>
 
 <body>
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+<div class="mdl-layout mdl-js-layout <?php if($conf["sidebar"] != "") echo "mdl-layout--fixed-drawer" ?>
              <?php echo tpl_classes(); ?> mdl-layout--fixed-header" id="dokuwiki__top">
     <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
@@ -79,7 +79,17 @@
             <?php endif ?>
         </section>
         <nav class="mdl-navigation mdl-layout-spacer">
-            <?php include("sidebar.php");?>
+            <?php
+            if($conf["sidebar"] != "") include("sidebar.php");?>
+            <div class="mdl-layout-spacer" style="max-height: 20px"></div>
+            <a class="mdl-navigation__link" href="<?php echo DOKU_BASE . "doku.php?do=media" ?>">
+                <i class="material-icons" role="presentation">perm_media</i>
+                Media Manager</a>
+            <?php if($feedbackForm): ?>
+                <a class="mdl-navigation__link" href="<?php echo $feedbackLink ?>" target="_blank">
+                    <i class="material-icons" role="presentation">feedback</i>
+                    Feedback</a>
+            <?php endif; ?>
         </nav>
         <?php//TODO work on registration: tpl_action('register');?>
     </div>

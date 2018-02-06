@@ -40,14 +40,6 @@ if($technical) $feedbackLink .= rawurlencode("\n\n====PLEASE DO NOT DELETE=====\
     <i class="material-icons" role="presentation">done</i>
     Second link</a>
 <div class="mdl-layout-spacer"></div>
-<?php if($feedbackForm): ?>
-    <a class="mdl-navigation__link" href="<?php echo $feedbackLink ?>" target="_blank">
-        <i class="material-icons" role="presentation">feedback</i>
-        Feedback</a>
-<?php endif; ?>
-<a class="mdl-navigation__link" href="<?php echo DOKU_BASE . "doku.php?do=media" ?>">
-    <i class="material-icons" role="presentation">perm_media</i>
-    Media Manager</a>
 <a class="mdl-navigation__link" href="<?php echo DOKU_BASE . "about" ?>">
     <i class="material-icons" role="presentation">info_outline</i>
     About</a>
