@@ -1,11 +1,9 @@
-@media (max-width: 600px){
-
+@media (max-width: 600px) {
   .content-actions {
     margin-right: 20px !important;
     margin-top: -10px !important;
     //TODO: make this nicer
   }
-
   .content-actions__container {
     position: relative !important;
     margin: 0 !important;
@@ -13,18 +11,32 @@
   .content-youarehere {
     margin: .8em 42px .4em 0.8em;
   }
-
   .content-card {
     //margin: .8em 42px 2em 0.8em;
     min-height: 300px;
     margin: 0 !important;
     width: 100%;
   }
-
-  .content-search {
-    width: 100px;
+  .content-search{
+    width: 5em !important;
   }
-
+  .content-search:focus-within{
+    //FIXME: focus-within is not supported by IE and Edge, need to find an alternative
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #f8f8f8;
+    ._shadow_1dp;
+    width: calc(~"100% - 4em") !important;
+    z-index: 100;
+    height: 56px;
+    padding: 0px 2em;
+    .mdl-textfield{
+      margin-top: -10px;
+      width: 100%;
+      flex-grow: 1;
+    }
+  }
   .mdl-mini-footer {
     min-height: 200px;
   }

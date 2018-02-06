@@ -35,19 +35,21 @@
 </head>
 
 <body>
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+<div class="mdl-layout mdl-js-layout <?php if($conf["sidebar"] != "") echo "mdl-layout--fixed-drawer" ?>
              <?php echo tpl_classes(); ?> mdl-layout--fixed-header" id="dokuwiki__top">
     <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-                    <span class="mdl-layout-title content-title"><?php echo hsc($conf['title']) ?></span>
+            <span class="mdl-layout-title content-title"><?php echo hsc($conf['title']) ?></span>
             <div class="mdl-layout-spacer"></div>
             <form action="<?php echo DOKU_BASE . "doku.php"; ?>" accept-charset="utf-8" class="search" id="dw__search"
                   role="search">
-                <div class="mdl-textfield mdl-js-textfield content-search">
-                    <input type="hidden" name="do" value="search">
-                    <input class="mdl-textfield__input edit" id="qsearch__in" accesskey="f" name="id"
-                           title="[F]" autocomplete="off">
-                    <label class="mdl-textfield__label" for="qsearch__in">Search...</label>
+                <input type="hidden" name="do" value="search">
+                <div class="content-search">
+                    <div class="mdl-textfield mdl-js-textfield">
+                        <input class="mdl-textfield__input edit" id="qsearch__in" accesskey="f" name="id"
+                               title="[F]" autocomplete="off">
+                        <label class="mdl-textfield__label" for="qsearch__in">Search</label>
+                    </div>
                 </div>
                 <div id="qsearch__out" class="ajax_qsearch JSpopup content-search__popup" style="display: none;"></div>
             </form>
@@ -77,7 +79,17 @@
             <?php endif ?>
         </section>
         <nav class="mdl-navigation mdl-layout-spacer">
-            <?php include("sidebar.php");?>
+            <?php
+            if($conf["sidebar"] != "") include("sidebar.php");?>
+            <div class="mdl-layout-spacer" style="max-height: 20px"></div>
+            <a class="mdl-navigation__link" href="<?php echo DOKU_BASE . "doku.php?do=media" ?>">
+                <i class="material-icons" role="presentation">perm_media</i>
+                Media Manager</a>
+            <?php if($feedbackForm): ?>
+                <a class="mdl-navigation__link" href="<?php echo $feedbackLink ?>" target="_blank">
+                    <i class="material-icons" role="presentation">feedback</i>
+                    Feedback</a>
+            <?php endif; ?>
         </nav>
         <?php//TODO work on registration: tpl_action('register');?>
     </div>
@@ -129,7 +141,7 @@
                     </div>
                 <?php endif?>
                 <div class="content-card__text">
-                    <?php 
+                    <?php
                     /*  Do you see the heading twice because you have 'useheading' enabled?
                         You can use one of these two plugins to elegantly hide the redudant second title
                             -https://www.dokuwiki.org/plugin:pagetitle
@@ -139,7 +151,6 @@
                 </div>
             </article>
         </div>
-        <!-- FIXME: footer at bottom -->
         <div class="mdl-layout-spacer"></div>
         <footer class="mdl-mini-footer">
             <div class="mdl-mini-footer__left-section">
