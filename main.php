@@ -102,7 +102,7 @@
                 </script>
             <?php endif; ?>
         </nav>
-        <?php//TODO work on registration: tpl_action('register');?>
+        <?php /*TODO: re-add registration: tpl_action('register');*/ ?>
     </div>
     <main class="mdl-layout__content">
         <div class="page-content">
