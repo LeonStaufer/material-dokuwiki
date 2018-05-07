@@ -3,10 +3,44 @@ a {
   font-weight: 500;
 }
 
+// quick fix, thanks @rjahn
+#mediamanager__page li div.li {
+  display: initial;
+  padding-left: 7px;
+}
+
+#mediamanager__page ul.thumbs li dt {
+  padding-bottom: 18px;
+}
+
+#mediamanager__page ul.thumbs li dd {
+  margin-left: 0;
+}
+
+//other fixes
+.plugin_translation{
+  a{
+    color: rgba(0, 0, 0, 0.92) !important;
+    background: transparent !important;
+  }
+}
+
 // BELOW YOU WILL FIND MODIFIED COMPONENTS TAKEN FROM MDL.
 // 
 // Take a look at MDL here: https://getmdl.io/
 // All MDL components used in this project are licensed under Apache License 2.0
+
+.mdl-layout__container{
+  height: 100vh;
+}
+
+.mdl-layout-title {
+  flex-shrink: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
 
 .mdl-button.mdl-button--colored {
   color: @ini_primary;
@@ -25,16 +59,27 @@ a {
   margin: 0;
 }
 
+.mdl-navigation {
+  padding-top: 0px !important;
+}
+  
 .mdl-navigation__link {
   color: @light_secondary !important;
+  opacity: 1 !important;
 }
 
 .mdl-layout__drawer {
+  overflow: overlay;
   ._shadow_3dp;
   background: rgb(24,31,105);
   background: @primary_dark;
   border: none;
+  width: 18.5em;
   color: @light_secondary;
+}
+
+.mdl-layout__drawer.is-visible {
+  left: 0;
 }
 
 .mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
