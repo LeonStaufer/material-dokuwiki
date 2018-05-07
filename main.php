@@ -25,9 +25,9 @@
     <meta name="googlebot" content="noimageindex"/>
 
     <!-- Styling -->
-    <meta name="theme-color" content="#1a237e">
+    <meta name="theme-color" content="<?php echo parse_ini_file("style.ini")["__primary__"] ?>">
 
-    <meta name="apple-mobile-web-app-status-bar-style" content="#1a237e">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#<?php echo parse_ini_file("style.ini")["__primary__"] ?>">
     <?php echo tpl_favicon(array('favicon')) ?>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -107,7 +107,10 @@
     <main class="mdl-layout__content">
         <div class="page-content">
             <div class="content-notif">
-                <?php html_msgarea() ?>
+                <?php html_msgarea();
+                $translation = plugin_load('helper','translation');
+                if ($translation) echo $translation->showTranslations();
+                ?>
             </div>
             <div class="content-youarehere">
                 <?php if ($conf['breadcrumbs']): ?>

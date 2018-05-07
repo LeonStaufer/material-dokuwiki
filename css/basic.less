@@ -71,6 +71,12 @@ body {
   }
 }
 
+@media (min-width: 1025px) {
+  .page-content {
+    margin-left: 16px;
+  }
+}
+
 @media (min-width: 1600px) {
   .page-content {
     width: 1200px;
@@ -125,6 +131,7 @@ body {
 }
 
 .mdl-navigation {
+  margin-top: 16px;
   a{
     color: @light_secondary;
     text-decoration: none;
@@ -300,6 +307,24 @@ body {
   }
 }
 
+#config__manager{
+  fieldset{
+    background: #fff;
+    ._shadow_1dp;
+    margin: 16px 0px;
+    table{
+      width: auto;
+    }
+    .value{
+      width: auto;
+    }
+  }
+}
+
+#config__manager tr.default .input, #config__manager tr.default input, #config__manager tr.default textarea, #config__manager tr.default select, #config__manager .selectiondefault {
+  background-color: #fff;
+}
+
 .secedit {
   button {
     background: transparent;
@@ -355,5 +380,6 @@ body {
   min-height: max-content;
   .mdl-mini-footer__left-section {
     overflow: hidden;
+    padding-left: 12px;
   }
 }
