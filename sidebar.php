@@ -10,23 +10,23 @@
 /*
  * Choose if you want to render the sidebar DokuWiki page
  */
-$sidebarPage = false;
+$sidebarPage = tpl_getConf('dokuwikiSidebar') == 1 ? true : false;
 
 
 /*
  * Choose if you want to have a feedback form and if it should include technical information.
  */
-$feedbackForm = true;
-$technical = true;
+$feedbackForm = tpl_getConf('feedbackForm') == 1 ? true : false;
+$technical = tpl_getConf('technicalFeedbackForm') == 1 ? true : false;
 
 
 /*
 * You can customize the feedback form below.
 */
 
-$email = "address@domain.com";
-$subjectLine = "Feedback for Website";
-$body = "Thank you so much for taking the time to write feedback. We really appreciate it :) \n\n [your message] \n\n\n You can ignore all the technical information below. It only helps us track down what the problem might be.";
+$email = tpl_getConf('feedbackEmail');
+$subjectLine = tpl_getConf('feedbackSubjectLine');
+$body = tpl_getConf('feedbackBody');
 
 $feedbackLink = "mailto:".$email."?subject=".rawurlencode($subjectLine)."&body=".rawurlencode($body);
 $technicalDump = "REDIRECT_STATUS: " .   $_SERVER["REDIRECT_STATUS"] . "\n".
@@ -41,7 +41,7 @@ if($technical) $feedbackLink .= rawurlencode("\n\n====PLEASE DO NOT DELETE=====\
 ?>
 
 <?php
- if($sidebarPage) tpl_include_page("sidebar");
+if($sidebarPage) tpl_include_page("sidebar");
 ?>
 
 <a class="mdl-navigation__link" href="<?php echo DOKU_BASE . "doku.php?id=wiki:dokuwiki" ?>">
