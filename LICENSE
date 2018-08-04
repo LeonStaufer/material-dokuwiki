@@ -120,6 +120,13 @@
           that such additional attribution notices cannot be construed
           as modifying the License.
 
+       (e)You or your organisation are not using this work for any website
+          or derivative work that contains study information or relates in
+          any way to providing information for students to study. If you or
+          your organisation does meet this criterion this license does not
+          apply and you must contact the licensor if you intend to continue
+          using this work.
+
       You may add Your own copyright statement to Your modifications and
       may provide additional or different license terms and conditions
       for use, reproduction, or distribution of Your modifications, or
@@ -175,18 +182,7 @@
 
    END OF TERMS AND CONDITIONS
 
-   APPENDIX: How to apply the Apache License to your work.
-
-      To apply the Apache License to your work, attach the following
-      boilerplate notice, with the fields enclosed by brackets "[]"
-      replaced with your own identifying information. (Don't include
-      the brackets!)  The text should be enclosed in the appropriate
-      comment syntax for the file format. We also recommend that a
-      file or class name and description of purpose be included on the
-      same "printed page" as the copyright notice for easier
-      identification within third-party archives.
-
-   Copyright [yyyy] [name of copyright owner]
+   Copyright 2018 Leon Staufer
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
