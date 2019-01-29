@@ -56,6 +56,13 @@
             <?php
             foreach ((new \dokuwiki\Menu\UserMenu())->getItems() as $action){
                 switch ($action->getType()){
+                    case "register":{
+                        tpl_action('register', true, false, false, '', '', "
+                            <button class=\"mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect mdl-button--colored\">
+                              <i class=\"material-icons\">person_add</i>
+                            </button>");
+                        break;
+                    }
                     case "login":{
                         tpl_action('login', true, false, false, '', '', "
                             <button class=\"mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect mdl-button--colored\">
@@ -203,7 +210,7 @@
                 <div class="content-card__text">
                     <?php
                     /*  Do you see the heading twice because you have 'useheading' enabled?
-                        You can use one of these two plugins to elegantly hide the redudant second title
+                        You can use one of these two plugins to elegantly hide the redundant second title
                             -https://www.dokuwiki.org/plugin:pagetitle
                             -https://www.dokuwiki.org/plugin:hiddenheader
                     */

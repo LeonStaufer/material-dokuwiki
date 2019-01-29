@@ -1,7 +1,7 @@
 base     material
 author   Leon Staufer
 email    leon.staufer@gmail.com
-date     2018-08-04
+date     2019-01-29
 name     Material Template
 desc     A versatile material design style template.
 url      https://www.dokuwiki.org/template:material
