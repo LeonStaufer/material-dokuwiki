@@ -210,7 +210,7 @@
                 <div class="content-card__text">
                     <?php
                     /*  Do you see the heading twice because you have 'useheading' enabled?
-                        You can use one of these two plugins to elegantly hide the redudant second title
+                        You can use one of these two plugins to elegantly hide the redundant second title
                             -https://www.dokuwiki.org/plugin:pagetitle
                             -https://www.dokuwiki.org/plugin:hiddenheader
                     */
