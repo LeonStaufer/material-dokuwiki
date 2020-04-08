@@ -177,16 +177,16 @@
                                     break;
                                 }
                                 case "export_pdf": {
-                                    $attr = $action->getLinkAttributes();
-                                    echo "<a href='".$attr["href"]."' title='".$attr["title"]."'>
+                                    $attr = buildAttributes($action->getLinkAttributes());
+                                    echo "<a $attr>
                                             <button class=\"mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored content-actions__action-button\">
                                                 <i class=\"material-icons\">picture_as_pdf</i>
                                             </button></a>";
                                     break;
                                 }
                                 default: {
-                                    $attr = $action->getLinkAttributes();
-                                    echo "<a href='".$attr["href"]."' title='".$attr["title"]."'>
+                                    $attr = buildAttributes($action->getLinkAttributes());
+                                    echo "<a $attr>
                                             <button class=\"mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored content-actions__action-button\">"
                                         .inlineSVG($action->getSvg())."
                                             </button></a>";
