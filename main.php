@@ -200,11 +200,11 @@
                 </div>
                 <?php if ($ACT == "show"): ?>
                     <div class="content-card__title">
-                        <h1><?php
-                            if ($conf["youarehere"]) {
-                                echo ucfirst(tpl_pagetitle(null, true));
-                            }else echo ucfirst($ID);
-                            ?></h1>
+                        <?php if (tpl_getConf("subtlePagename")): ?>
+                            <span class="pagename-bar"><?php echo ucfirst(tpl_pagetitle(null, true)); ?></span>
+                        <?php else: ?>
+                            <h1 class="pagename-title"><?php echo ucfirst(tpl_pagetitle(null, true)); ?></h1>
+                        <?php endif ?>
                     </div>
                 <?php endif?>
                 <div class="content-card__text">
