@@ -50,6 +50,20 @@ Regularly visit the installed templates via the configuration manager in order t
 5. if you wish you can now open the `sidebar.php` file and change its contents to your liking
 6. and you're set! 
 
+The template also comes with several configuration options, which you can set via the Configuration Manager.
+
+| Key                   | Description                                                  | Default |
+| --------------------- | ------------------------------------------------------------ | ------- |
+| `dokuwikiSidebar`     | use the sidebar page within the wiki instead of the `sidebar.php` file | `false` |
+| `feedbackForm`        | add a button that allows users to give feedback              | `true`  |
+| `feedbackEmail`       | the recipient Email address for the feedback | `address@domain.com` |
+| `feedbackSubjectLine` | subject line of the Email | `Feedback for Website` |
+| `feedbackBody`       | body of the Email | `Thank you so much for taking the time to write feedback. We really appreciate it :) \n\n [your message] \n\n\n You can ignore all the technical information below. It only helps us track down what the problem might be.` |
+| `hiddenActions`      | DokuWiki actions that are hidden | `backlink,top` |
+| `protrudingDrawer`   | if the drawer should stick out on the left | `true` |
+| `subtlePagename`     | if the title of the page should not be the focus | `false` |
+
+
 ## Feedback
 
 If you encounter any problems or would like to see functionality added, please head over to the issue page on GitHub and submit your bug/request.
