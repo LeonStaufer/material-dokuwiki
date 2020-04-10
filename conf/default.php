@@ -14,3 +14,5 @@ $conf["feedbackBody"] = "Thank you so much for taking the time to write feedback
 $conf["hiddenActions"] = "backlink,top";
 
 $conf["protrudingDrawer"] = 1;
+
+$conf["subtlePagename"] = 0;

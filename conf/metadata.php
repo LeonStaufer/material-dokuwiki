@@ -14,3 +14,5 @@ $meta['feedbackBody'] = array('string');
 $meta['hiddenActions']  = array('multicheckbox','_choices' => array('edit','revs','backlink','export_pdf','top'));
 
 $meta['protrudingDrawer'] = array('onoff');
+
+$meta['subtlePagename'] = array('onoff');
