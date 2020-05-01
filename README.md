@@ -56,7 +56,7 @@ The template also comes with several configuration options, which you can set vi
 | --------------------- | ------------------------------------------------------------ | ------- |
 | `dokuwikiSidebar`     | use the sidebar page within the wiki instead of the `sidebar.php` file | `false` |
 | `feedbackForm`        | add a button that allows users to give feedback              | `true`  |
-| `technicalFeedbackForm` technical information is included in the feedback email          | `true`  |
+| `technicalFeedbackForm` | technical information is included in the feedback email          | `true`  |
 | `feedbackEmail`       | the recipient Email address for the feedback | `address@domain.com` |
 | `feedbackSubjectLine` | subject line of the Email | `Feedback for Website` |
 | `feedbackBody`       | body of the Email | `Thank you so much for taking the time to write feedback. We really appreciate it :) \n\n [your message] \n\n\n You can ignore all the technical information below. It only helps us track down what the problem might be.` |
