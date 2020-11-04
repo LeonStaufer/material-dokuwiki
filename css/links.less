@@ -1,0 +1,65 @@
+.page-content {
+  a,
+  a:link,
+  a:active,
+  a:visited,
+  a:hover {
+    color: @ini_link;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  /* existing wikipage */
+  a.wikilink1,
+  a.wikilink1:link,
+  a.wikilink1:active,
+  a.wikilink1:visited,
+  a.wikilink1:hover {
+    color: @ini_existing;
+    background-color: inherit;
+  }
+  /* not existing wikipage */
+  a.wikilink2,
+  a.wikilink2:link,
+  a.wikilink2:active,
+  a.wikilink2:visited,
+  a.wikilink2:hover {
+    color: @ini_missing;
+    background-color: inherit;
+  }
+  a.wikilink2:link,
+  a.wikilink2:visited,
+  a.wikilink2:hover,
+  a.wikilink2:active,
+  a.wikilink2:focus {
+    border-bottom-width: 0;
+  }
+
+  /* any link to current page */
+  span.curid a {
+    font-weight: bold;
+  }
+
+  a.urlextern,
+  a.windows,
+  a.mail,
+  a.mediafile,
+  a.interwiki {
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    padding: 0 0 0 18px;
+  }
+  /* external link */
+  a.urlextern {
+    background-image: url(../../images/external-link.png);
+  }
+  /* windows share */
+  a.windows {
+    background-image: url(../../images/unc.png);
+  }
+  /* email link */
+  a.mail {
+    background-image: url(../../images/email.png);
+  }
+}
