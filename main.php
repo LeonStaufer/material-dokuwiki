@@ -36,7 +36,7 @@
 
 <body>
 <div class="mdl-layout mdl-js-layout <?php if($conf["sidebar"] != "") echo "mdl-layout--fixed-drawer" ?>
-             <?php echo tpl_classes(); ?> mdl-layout--fixed-header" id="dokuwiki__top">
+             <?php echo tpl_classes(); ?> mdl-layout--fixed-header">
     <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
             <span class="mdl-layout-title content-title"><?php echo hsc($conf['title']) ?></span>
@@ -101,7 +101,7 @@
     </header>
     <div class="mdl-layout__drawer <?php if (tpl_getConf("protrudingDrawer") == 1) echo "mdl-layout__drawer--out"; ?>">
         <section class="drawer-top">
-            <span class="mdl-logo"><?php tpl_link(wl(), '<img src="' . tpl_getMediaFile(array(':wiki:logo.svg', ':logo.svg', 'images/logo.svg')) . '" alt="' . $conf['title'] . '" />', 'id="dokuwiki__top" accesskey="h" title="[H]"'); ?></span>
+            <span class="mdl-logo"><?php tpl_link(wl(), '<img src="' . tpl_getMediaFile(array(':wiki:logo.svg', ':logo.svg', 'images/logo.svg')) . '" alt="' . $conf['title'] . '" />', 'accesskey="h" title="[H]"'); ?></span>
             <br>
             <?php if ($conf['tagline']): ?>
                 <p class="drawer-tagline">
@@ -129,7 +129,7 @@
         </nav>
     </div>
     <main class="mdl-layout__content">
-        <div class="page-content">
+        <div id="dokuwiki__top" class="page-content">
             <div class="content-notif">
                 <?php html_msgarea();
                 $translation = plugin_load('helper','translation');
